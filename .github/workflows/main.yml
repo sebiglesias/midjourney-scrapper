@@ -27,4 +27,4 @@ jobs:
           INSTAGRAM_SECRET: ${{ secrets.INSTAGRAM_SECRET }}
           MIDJOURNEY_URL: ${{ secrets.MIDJOURNEY_URL }}
         run: |
-          python main.py $INSTAGRAM_CLIENT $INSTAGRAM_SECRET $MIDJOURNEY_URL
+          python main.py "$INSTAGRAM_CLIENT" "$INSTAGRAM_SECRET" "$MIDJOURNEY_URL"
