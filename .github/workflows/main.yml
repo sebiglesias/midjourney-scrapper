@@ -22,9 +22,5 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run script
-        env: 
-          INSTAGRAM_CLIENT: ${{ secrets.INSTAGRAM_CLIENT }}
-          INSTAGRAM_SECRET: ${{ secrets.INSTAGRAM_SECRET }}
-          MIDJOURNEY_URL: ${{ secrets.MIDJOURNEY_URL }}
         run: |
-          python main.py "$INSTAGRAM_CLIENT" "$INSTAGRAM_SECRET" "$MIDJOURNEY_URL"
+          python main.py ${{ secrets.INSTAGRAM_CLIENT }} ${{ secrets.INSTAGRAM_SECRET }} ${{ secrets.MIDJOURNEY_URL }}
