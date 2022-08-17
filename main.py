@@ -7,10 +7,10 @@ from datetime import datetime
 from instagrapi import Client
 import sys
 
-client = sys.argv[0]
-secret = sys.argv[1]
+client = sys.argv[1]
+secret = sys.argv[2]
 
-url = sys.argv[2]
+url = sys.argv[3]
 
 # Perform Request
 print('# Perform Request')
