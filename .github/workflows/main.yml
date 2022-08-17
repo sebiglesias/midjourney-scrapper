@@ -9,6 +9,7 @@ on:
 
 jobs:
   build:
+    environment: staging
     runs-on: ubuntu-latest
     env:
       INSTAGRAM_CLIENT: ${{ secrets.INSTAGRAM_CLIENT }}
