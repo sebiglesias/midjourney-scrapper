@@ -1,4 +1,4 @@
 # midjourney-scrapper
 Midjourney feed Scrapper
 
-Midjourney
+https://www.instagram.com/ai_genimages/
